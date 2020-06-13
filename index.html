@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Portfolio</title>
 <style>
@@ -60,6 +61,11 @@ h1{
     height:200px;
     border:none; 
 }
+.visibility { display:none; }
+
+@media screen and (min-width: 768px) {
+  .visibility  { display: block; }
+}
 }
 </style>
 </head>
@@ -90,21 +96,23 @@ h1{
         <br>
         <h1 style="text-align:center;font-style:bold;">ARINJOY KUNDU</h1><br>
         <h3 style="text-align:center;font-family:cursive;font-style:italic;">BTech(CSE) graduate with a keen interest in Machine Learning and Web Developement.</h3><br>
+        <div class="visibility">
         <svg width=650 height=418 style="background-color: darkturquoise;">
             <polygon points="520,60 460,248 610,128 430,128 580,248"
             style="fill:black;stroke:rgb(30, 5, 119);stroke-width:5;fill-rule:evenodd;" />
             Error : Inline svg is not supported by your browser.
         </svg>
+        </div>
     </div>
     
 </div>
 <div id="about">
     <br>
     <h1 style="text-align: center;">About Me</h1>
-    <pre style="font-size: large; text-align: center;">
+    <p style="font-size: large; text-align: center; padding-left: 10%; padding-right: 10%;">
          I am currently pursuing a B.Tech. degree in the field of Computer Science.
          I have a keen interest in learning new things and right from my childhood
-         I have been an avid reader of story books.</pre>
+         I have been an avid reader of story books.</p>
          <br>
 
 </div>
